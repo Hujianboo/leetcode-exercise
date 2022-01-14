@@ -29,7 +29,6 @@ var addTwoNumbers = function(l1, l2) {
         third.next = new ListNode(Math.floor(sum % 10))
         third = third.next;
     }   
-    //l1有，l2没有
     if(first !== null || second !== null){
         let longer = (first !== null ? first:second);
         for(;longer !== null;longer = longer.next){
